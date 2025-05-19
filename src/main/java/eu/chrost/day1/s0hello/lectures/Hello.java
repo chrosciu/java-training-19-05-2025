@@ -1,4 +1,4 @@
-package eu.chrost.lectures.day1.s0hello;
+package eu.chrost.day1.s0hello.lectures;
 
 public class Hello {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package eu.chrost.lectures.day1.s1variables;
+package eu.chrost.day1.s1variables.lectures;
 
 public class IntegerVariables {
     public static void main(String[] args) {
