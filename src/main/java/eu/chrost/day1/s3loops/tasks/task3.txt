@@ -1,0 +1,5 @@
+Zadanie 3: Liczba doskonała
+1. Liczba doskonała to taka liczba, której suma jej dzielników (mniejszych od niej samej) jest równa tej liczbie
+ (np. 6 ma dzielniki 1, 2, 3, a 1 + 2 + 3 = 6).
+2. Wczytaj liczbę całkowitą N.
+3. Sprawdź, czy N jest liczbą doskonałą, i wyświetl odpowiedni komunikat.

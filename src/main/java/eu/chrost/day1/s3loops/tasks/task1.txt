@@ -1,0 +1,4 @@
+Zadanie 1: Suma liczb od 1 do N
+1. Wczytaj z konsoli liczbę całkowitą N.
+2. Oblicz i wyświetl sumę liczb od 1 do N (np. dla N=5 wynik to 15).
+3. Wykorzystaj pętlę for a nastepnie while (czyli zrobic to na 2 sposoby)
