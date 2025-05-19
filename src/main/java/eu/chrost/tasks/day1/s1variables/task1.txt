@@ -1,0 +1,5 @@
+Zadanie 1: Obliczanie wieku
+Wczytaj z konsoli bieżący rok oraz rok urodzenia użytkownika.
+Oblicz wiek użytkownika.
+Wyświetl wynik w formacie:
+Twój wiek to: <wiek>
