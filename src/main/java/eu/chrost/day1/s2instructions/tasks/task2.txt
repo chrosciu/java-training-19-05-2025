@@ -1,0 +1,12 @@
+Zadanie 2: Sprawdzanie roku przestępnego
+1. Wczytaj z konsoli rok (liczba całkowita).
+2. Sprawdź, czy rok jest przestępny:
+
+Rok przestępny to taki, który:
+▪ jest podzielny przez 4 i nie jest podzielny przez 100, lub
+▪ jest podzielny przez 400.
+
+3. Wyświetl komunikat:
+Rok 2024 jest przestępny.
+lub
+Rok 2023 nie jest przestępny.
