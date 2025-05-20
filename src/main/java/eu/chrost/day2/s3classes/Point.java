@@ -1,4 +1,4 @@
-package eu.chrost.day2.s3classes.p1point;
+package eu.chrost.day2.s3classes;
 
 import java.util.Objects;
 

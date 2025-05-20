@@ -1,4 +1,4 @@
-package eu.chrost.day2.s3classes.p1point;
+package eu.chrost.day2.s3classes;
 
 public class Main {
     public static void main(String[] args) {
