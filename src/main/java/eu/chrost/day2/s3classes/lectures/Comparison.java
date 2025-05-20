@@ -1,4 +1,4 @@
-package eu.chrost.day2.s3classes;
+package eu.chrost.day2.s3classes.lectures;
 
 public class Comparison {
     public static void main(String[] args) {

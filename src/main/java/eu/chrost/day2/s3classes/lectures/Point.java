@@ -1,4 +1,4 @@
-package eu.chrost.day2.s3classes;
+package eu.chrost.day2.s3classes.lectures;
 
 import java.util.Objects;
 
