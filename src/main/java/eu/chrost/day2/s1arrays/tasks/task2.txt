@@ -1,0 +1,7 @@
+Zadanie 2: Szukanie największego elementu
+1. Wczytaj liczb całkowite jako argumenty programu i zapisz je w tablicy typu int[]
+(uwaga: trzeba sprawdzic ile uzytkownik ich faktycznie przekazal)
+(uwaga: trzeba bedzie dokonac konwersji tablicy String[] na tablice int[])
+2. Znajdź największy element w tablicy, używając pętli for-each.
+3. Wyświetl wynik w formacie:
+Największa liczba w tablicy to: 42

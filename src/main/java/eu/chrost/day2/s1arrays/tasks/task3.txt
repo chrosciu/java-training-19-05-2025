@@ -1,0 +1,5 @@
+Zadanie 3: Obracanie tablicy
+1. Stwórz tablicę jednowymiarową z liczbami całkowitymi (np. {10, 20, 30, 40, 50}).
+2. Stwórz nową tablicę zawierającą elementy oryginalnej tablicy w odwróconej kolejności
+3. Wyświetl nową tablicę:
+50 40 30 20 10
