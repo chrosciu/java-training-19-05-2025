@@ -1,0 +1,14 @@
+Zadanie 2: Klasa Rectangle
+1. Utwórz klasę Rectangle z polami:
+o  double length
+o double width
+2. Dodaj metody:
+o double calculateArea() – zwraca pole prostokąta.
+o double calculatePerimeter() – zwraca obwód prostokąta.
+3. Nadpisz metodę equals(), aby porównywała prostokąty na podstawie długości i szerokości.
+4. Nadpisz metodę toString() aby wyświetlała składowe prostokąta
+5. W main():
+o Utwórz kilka obiektów klasy Rectangle, ustawiając wartości pól bezpośrednio.
+o Porównaj obiekty za pomocą equals() i ==.
+o Wyświetl stworzone prostokąty
+o Wyświetl pole i obwód prostokątów.
