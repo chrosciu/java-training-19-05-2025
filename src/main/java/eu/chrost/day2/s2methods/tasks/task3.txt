@@ -1,0 +1,4 @@
+Zadanie 3: Obliczanie średniej
+1. Utwórz klasę Task3 i dodaj do niej metodę:
+o  average(int... numbers) – oblicza średnią arytmetyczną przekazanych argumentów.
+2. W main() przetestuj metodę dla kilku zestawów argumentów.

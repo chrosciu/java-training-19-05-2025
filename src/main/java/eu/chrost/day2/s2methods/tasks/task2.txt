@@ -1,0 +1,4 @@
+Zadanie 2: Liczba doskonała
+1. Utwórz klasę Task2 i dodaj do niej metodę isPerfect(int n), która sprawdza, czy liczba n jest doskonała (tj. suma jej dzielników właściwych równa jest samej liczbie).
+2. Dodaj przeciążoną wersję isPerfect(int n, boolean verbose) – w wersji verbose = true wypisuje na konsoli, jakie dzielniki znaleziono.
+3. W main() wczytaj liczbę od użytkownika (lub pobierz jako argument wywołania - wersja dowolna :)) i przetestuj obie metody.
