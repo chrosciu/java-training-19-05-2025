@@ -1,0 +1,18 @@
+Zadanie 3: Klasa BankAccount
+1. Utwórz klasę BankAccount z polami:
+o String accountNumber
+o double balance
+Pola powinny byc z modyfikatorami private final
+2. Dodaj trzy przeciążone konstruktory:
+o Bez parametrów (ustawia domyślne wartości accountNumber = "0000", balance = 0.0).
+o Z parametrem accountNumber (ustawia numer konta, a saldo na 0.0).
+o Z parametrami accountNumber i balance.
+3. Dodaj gettery do pól
+4. Dodaj metodę toString()
+5. Dodaj metody:
+o void deposit(double amount) – zwiększa saldo o podaną kwotę.
+o void withdraw(double amount) – zmniejsza saldo o podaną kwotę (jeśli na koncie są wystarczające środki).
+6. Utwórz klasę Main z metodą main() i w tej metodzie:
+o Utwórz różne konta bankowe przy użyciu przeciążonych konstruktorów.
+o Wykonaj operacje wpłat i wypłat dla każdego konta.
+Sprawdź działanie tych operacji poprzez wypisanie zawrtości kont przed i po operacji
