@@ -5,7 +5,6 @@ class Main {
         Person p1 = new Person();
         p1.name = "Ola";
         p1.age = 20;
-        p1.height = 175;
 
         Person p2 = new Person();
         p2.name = "Mateusz";
@@ -14,6 +13,9 @@ class Main {
         Person p3 = new Person();
         p3.name = "Ola";
         p3.age = 20;
+
+        System.out.println(p1.equals(p2));
+        System.out.println(p1.hashCode() == p2.hashCode());
 
         System.out.println("p1 == p2 " + (p1 == p2));
         System.out.println("p1 == p3 " + (p1 == p3));
@@ -27,6 +29,21 @@ class Main {
 
         System.out.println("Ola: " + p1.isAdult());
         System.out.println("Mateusz: " + p2.isAdult());
+
+        Person p = new Person();
+        Object o = p;
+
+        if (o instanceof Person) {
+            Person person = (Person) o;
+            //...
+        }
+
+        if (o instanceof Person person) {
+            //person jest tu juz dostepny
+            person.isAdult();
+        }
+
+        boolean isPerson = o instanceof Person;
 
     }
 }
