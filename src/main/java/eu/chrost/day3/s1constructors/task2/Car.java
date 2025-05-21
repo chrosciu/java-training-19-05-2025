@@ -1,6 +1,6 @@
 package eu.chrost.day3.s1constructors.task2;
 
-public class Car {
+class Car {
     private final String brand;
     private final String model;
     private final int year;
