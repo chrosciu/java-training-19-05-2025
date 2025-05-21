@@ -1,0 +1,2 @@
+Zadanie 3: Record Car
+Zrób to samo co w zadaniu 2, ale zamiast klasy Car stwórz record Car

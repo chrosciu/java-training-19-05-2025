@@ -1,0 +1,17 @@
+Zadanie 2: Klasa Car
+1. Utwórz klasę Car z polami:
+o String brand
+o String model
+o int year
+Wszystkie pola powinny byc z modyfikatorami private final
+2. Dodaj trzy przeciążone konstruktory:
+o Bez parametrów (ustawia domyślne wartości brand = "Unknown", model = "Unknown", year = 2000).
+o Z parametrami brand i model (ustawia rok na 2000).
+o Z wszystkimi trzema parametrami.
+3. Dodaj gettery do pól
+4. Dodaj metodę toString()
+5. Dodaj metodę boolean isOlderThan(int year) sprawdzającą, czy samochód jest starszy niż podany rok.
+6. Utwórz klasę Main z metodą main() i w tej metodzie:
+o Utwórz różne samochody, korzystając z różnych konstruktorów.
+o Sprawdź, które samochody są starsze od podanej wartości.
+o Wypisz na konsolę samochody oraz ich pola (poprzez gettery)
