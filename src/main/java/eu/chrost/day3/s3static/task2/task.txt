@@ -1,0 +1,11 @@
+Zadanie 2: Kalkulator ze stałymi
+1. Utwórz klasę Calculator z polami:
+o Stałe static final double PI (wartość 3.14159) i static final double E (wartość 2.71828).
+2. Dodaj statyczne metody:
+o double add(double a, double b) – zwraca sumę dwóch liczb.
+o double subtract(double a, double b) – zwraca różnicę dwóch liczb.
+o double multiply(double a, double b) – zwraca iloczyn dwóch liczb.
+o double divide(double a, double b) – zwraca iloraz dwóch liczb.
+3. Utwórz klasę Main z metodą main() i w tej metodzie:
+o Wykorzystaj stałe PI i E jako argumenty w metodach kalkulatora.
+o Wyświetl wyniki operacji.
