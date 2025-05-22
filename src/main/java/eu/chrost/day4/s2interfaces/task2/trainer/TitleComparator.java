@@ -1,8 +1,13 @@
 package eu.chrost.day4.s2interfaces.task2.trainer;
 
-class TitleComparator {
+import java.util.Comparator;
 
-    //String s1
-    //String s2
-    //s1.compareTo(s2)
+class TitleComparator implements Comparator<Book> {
+    @Override
+    public int compare(Book o1, Book o2) {
+        String t1 = o1.title();
+        String t2 = o2.title();
+        return t1.compareTo(t2);
+
+    }
 }
