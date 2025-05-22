@@ -1,0 +1,11 @@
+Zadanie 2: Klasa abstrakcyjna w hierarchii pracowników
+1. Utwórz abstrakcyjną klasę Employee:
+o Dodaj pola String name, double salary.
+o Dodaj abstrakcyjną metodę void work().
+o Dodaj metodę void greet() - powinna wypisac na konsole napis: "I am [name]"
+2.Dodaj abstrakcyjną metodę double calculateBonus().
+3. Utwórz klasy Developer i Manager, które dziedziczą po Employee:
+o Dla Developer, metoda work() powinna wypisywać "Coding...".
+o Dla Manager, metoda work() powinna wypisywać "Managing team...".
+o Bonus dla dewelopera to 10% pensji, a dla menedżera – 20%.
+4. W metodzie main utwórz listę pracowników, wywołaj na nich metody work(), greet() oraz oblicz bonusy.
