@@ -1,6 +1,6 @@
 package eu.chrost.day4.s1abstract.lectures;
 
-class Cat extends Animal {
+final class Cat extends Animal {
 
     public Cat(String name) {
         super(name);

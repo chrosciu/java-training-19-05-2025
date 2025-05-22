@@ -6,7 +6,7 @@ class Dog extends Animal {
     }
 
     @Override
-    public String greet() {
+    public final String greet() {
         return "Woof! My name is: " + name;
     }
 }
