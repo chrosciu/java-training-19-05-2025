@@ -1,0 +1,4 @@
+Zadanie 1: Walidacja liczby
+1. Napisz program, który pobiera od użytkownika liczbę całkowitą z konsoli.
+2. Jeśli użytkownik wprowadzi tekst, który nie jest liczbą, program powinien przechwycić wyjątek NumberFormatException i wypisać komunikat: "Podana wartość nie jest liczbą!".
+3. Niezależnie od wyniku program powinien zawsze wypisać: "Dziękujemy za skorzystanie z programu!" w bloku finally.

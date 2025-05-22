@@ -1,0 +1,7 @@
+Zadanie 3: Automatyczne zamykanie zasobów
+1. Stwórz klasę CustomResource, która implementuje interfejs AutoCloseable:
+o W metodzie close() wypisuje komunikat: "Zamykanie zasobu!".
+2. Napisz program, który:
+o Tworzy obiekt CustomResource w konstrukcji try-with-resources.
+o Symuluje operację na zasobie i wypisuje komunikat: "Wykonuję operację!".
+o Dodaj blok catch dla hipotetycznego wyjątku
