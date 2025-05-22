@@ -1,4 +1,4 @@
-package eu.chrost.day4.s2interfaces;
+package eu.chrost.day4.s2interfaces.lectures;
 
 class Employee extends Worker implements Comparable<Employee>, Nameable {
     private final String name;

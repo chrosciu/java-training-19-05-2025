@@ -1,4 +1,4 @@
-package eu.chrost.day4.s2interfaces;
+package eu.chrost.day4.s2interfaces.lectures;
 
 abstract class Worker {
     protected final int salary;

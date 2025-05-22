@@ -1,6 +1,6 @@
-package eu.chrost.day4.s2interfaces;
+package eu.chrost.day4.s2interfaces.lectures;
 
-import eu.chrost.day4.s2interfaces.subpackage.NameDisplayer;
+import eu.chrost.day4.s2interfaces.lectures.subpackage.NameDisplayer;
 
 import java.util.Arrays;
 
