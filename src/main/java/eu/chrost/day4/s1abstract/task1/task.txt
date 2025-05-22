@@ -1,0 +1,10 @@
+Zadanie 1: Hierarchia figur geometrycznych
+1. Utwórz abstrakcyjną klasę Shape:
+o  Dodaj pole String name.
+o Dodaj abstrakcyjną metodę double getArea() i metodę String getDescription(), która zwraca "Shape: [name]".
+2. Utwórz klasy Circle i Rectangle, które dziedziczą po Shape:
+o W klasie Circle dodaj pole double radius.
+o W klasie Rectangle dodaj pola double width i double height.
+o Zaimplementuj metodę getArea() w obu klasach.
+3. Utwórz klasę Main z metodą main(). W tej metodzie utwórz tablicę figur (Shape[]),
+wypełnij ją obiektami różnych klas i wypisz powierzchnie wszystkich figur, używając metody getArea().
