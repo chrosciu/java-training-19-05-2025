@@ -1,4 +1,4 @@
-package eu.chrost.day3.s3static;
+package eu.chrost.day3.s3static.lectures;
 
 class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package eu.chrost.day3.s4inheritance;
+package eu.chrost.day3.s4inheritance.lectures;
 
 class Employee {
     private final String name;
