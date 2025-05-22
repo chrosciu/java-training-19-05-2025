@@ -15,10 +15,14 @@ class Main {
 
         Employee hiddenManager = manager;
         hiddenManager.whoAmI();
+        System.out.println(hiddenManager);
 
         Object veryHiddenManager = manager;
+        //veryHiddenManager.whoAmI() //nie kompiluje sie
         Employee veryHiddenEmployee = (Employee) veryHiddenManager;
         veryHiddenEmployee.whoAmI();
+
+       //String veryHiddenManagerAsString = (String) veryHiddenManager; //kompiluje sie ale w runtime rzuca ClassCastException
 
         if (veryHiddenManager instanceof String veryHiddenString) {
             //to sie nigdy nie wykona
@@ -27,6 +31,8 @@ class Main {
         Manager revealedManager = (Manager) veryHiddenManager;
         revealedManager.whoAmI();
 
-
+        if (veryHiddenManager instanceof Manager revealedAgainManager) {
+            revealedAgainManager.whoAmI();
+        }
     }
 }

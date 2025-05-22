@@ -4,7 +4,7 @@ class Main {
     public static void main(String[] args) {
         Config config = Config.getInstance();
 
-        System.out.println("app:m" + config.getAppName());
+        System.out.println("app:" + config.getAppName());
         System.out.println("version: " + config.getVersion());
     }
 }
