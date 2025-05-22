@@ -8,4 +8,5 @@ o Dodaj metodę void greet() - powinna wypisac na konsole napis: "I am [name]"
 o Dla Developer, metoda work() powinna wypisywać "Coding...".
 o Dla Manager, metoda work() powinna wypisywać "Managing team...".
 o Bonus dla dewelopera to 10% pensji, a dla menedżera – 20%.
-4. W metodzie main utwórz listę pracowników, wywołaj na nich metody work(), greet() oraz oblicz bonusy.
+4. Utworz klase Main i w niej metode main().
+W metodzie tej utwórz listę pracowników, wywołaj na nich metody work(), greet() oraz oblicz bonusy.
