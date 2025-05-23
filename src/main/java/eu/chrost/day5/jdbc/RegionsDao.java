@@ -1,5 +1,7 @@
 package eu.chrost.day5.jdbc;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -27,12 +29,14 @@ class RegionsDao {
                 //budujemy caly obiekt region
                 Region region = new Region(id, name);
                 //dodajemy go na koniec tablicy
-                Region[] newRegions = new Region[regions.length + 1];
-                for (int i = 0; i < regions.length; ++i) {
-                    newRegions[i] = regions[i];
-                }
-                newRegions[regions.length] = region;
-                regions = newRegions;
+                regions = ArrayUtils.add(regions, region);
+                //ponizszy kod jest tym co teraz robi ArrayUtils
+//                Region[] newRegions = new Region[regions.length + 1];
+//                for (int i = 0; i < regions.length; ++i) {
+//                    newRegions[i] = regions[i];
+//                }
+//                newRegions[regions.length] = region;
+//                regions = newRegions;
              }
         } catch (SQLException e) {
             e.printStackTrace();
