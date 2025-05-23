@@ -6,6 +6,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 class RegionsDao {
     public static Region[] getAllRegions() {
@@ -44,6 +47,26 @@ class RegionsDao {
         return regions;
     }
 
+    public static List<Region> getAllRegionsAsList() {
+        String sqlQuery = "select * from regions";
+        List<Region> regions = new ArrayList<>();
+        try (
+                var connection = DatabaseConnector.getConnection();
+                var statement = connection.createStatement();
+                var resultSet = statement.executeQuery(sqlQuery)
+        ) {
+            while (resultSet.next()) {
+                long id = resultSet.getLong("region_id");
+                String name = resultSet.getString("region_name");
+                Region region = new Region(id, name);
+                regions.add(region);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return regions;
+    }
+
     //metoda wyszykuje region o danym id - i jesli taki istnieje to go zwraca
     //jesli nie ma - zwraca null
     //hint: "select * from regions where region_id = 1"
@@ -69,4 +92,28 @@ class RegionsDao {
         }
         return null;
     }
+
+    public static Optional<Region> getRegionByIdAsOptional(long id) {
+        String sqlQuery = "select * from regions where region_id = ?";
+        try (
+                var connection = DatabaseConnector.getConnection();
+                //musi byc PreparedStatement a nie Statement ze wzgledu na przekazywanie parametrow
+                var preparedStatement = connection.prepareStatement(sqlQuery);
+        ) {
+            preparedStatement.setLong(1, id);
+            try (var resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    long regionId = resultSet.getLong("region_id");
+                    String regionName = resultSet.getString("region_name");
+                    //zmienna region jest dalej typu Region - nie mozna do niej przypisac czegos innego
+                    var region = new Region(regionId, regionName);
+                    return Optional.of(region);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return Optional.empty();
+    }
+
 }
