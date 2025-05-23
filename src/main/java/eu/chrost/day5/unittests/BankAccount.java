@@ -5,6 +5,9 @@ class BankAccount {
     private int balance;
 
     public BankAccount(String accountNumber, int balance) {
+        if (balance < 0) {
+            throw new IllegalArgumentException("Initial balance cannot be negative");
+        }
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
@@ -17,17 +20,17 @@ class BankAccount {
         return accountNumber;
     }
 
-    public double getBalance() {
+    public int getBalance() {
         return balance;
     }
 
-    public void deposit(double amount) {
+    public void deposit(int amount) {
         if (amount > 0) {
             balance += amount;
         }
     }
 
-    public void withdraw(double amount) {
+    public void withdraw(int amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
         }
