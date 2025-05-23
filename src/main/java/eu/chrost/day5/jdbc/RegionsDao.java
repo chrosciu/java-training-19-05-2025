@@ -43,4 +43,11 @@ class RegionsDao {
         }
         return regions;
     }
+
+    //metoda wyszykuje region o danym id - i jesli taki istnieje to go zwraca
+    //jesli nie ma - zwraca null
+    //hint: "select * from regions where region_id = 1"
+    public static Region getRegionById(long id) {
+        return null;
+    }
 }
