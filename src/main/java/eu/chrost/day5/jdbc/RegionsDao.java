@@ -48,6 +48,25 @@ class RegionsDao {
     //jesli nie ma - zwraca null
     //hint: "select * from regions where region_id = 1"
     public static Region getRegionById(long id) {
+        String sqlQuery = "select * from regions where region_id = ?";
+        try (
+                var connection = DatabaseConnector.getConnection();
+                //musi byc PreparedStatement a nie Statement ze wzgledu na przekazywanie parametrow
+                var preparedStatement = connection.prepareStatement(sqlQuery);
+        ) {
+            preparedStatement.setLong(1, id);
+            try (var resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    long regionId = resultSet.getLong("region_id");
+                    String regionName = resultSet.getString("region_name");
+                    //zmienna region jest dalej typu Region - nie mozna do niej przypisac czegos innego
+                    var region = new Region(regionId, regionName);
+                    return region;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 }
