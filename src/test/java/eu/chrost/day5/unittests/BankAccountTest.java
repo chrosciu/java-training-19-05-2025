@@ -32,4 +32,10 @@ class BankAccountTest {
         assertThat(balance).isEqualTo(SOME_INITIAL_BALANCE);
     }
 
+    //Napisac nastepujace testy:
+    //1) zweryfikowac czy numer konta przekazany przy jego tworzeniu jest taki sam jak odczytany potem z niego
+    //2) zweryfikowac czy dziala wplacanie na konto
+    //3) zweryfikowac czy dziala wyplacanie z konta (dwa przypadki - wyplacana suma mniejsza i wieksza od salda)
+    //4*) zweryfikowac czy dziala zabezpieczenie przed zalozeniem konta z ujemnym stanem
+
 }
